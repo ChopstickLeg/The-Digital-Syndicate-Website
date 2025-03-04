@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-@theme {
-  --color-lavender: #c86ed7;
-}
-
 #root {
   max-width: 1280px;
   margin: 0 auto;
