@@ -5,12 +5,10 @@ import Header from "./pages/header";
 function App() {
   return (
     <Router>
-      <div className="min-h-screen">
-        <Header />
-        <Routes>
-          <Route path="/" element={<label>test</label>} />
-        </Routes>
-      </div>
+      <Header />
+      <Routes>
+        <Route path="/" element={<label>test</label>} />
+      </Routes>
     </Router>
   );
 }
