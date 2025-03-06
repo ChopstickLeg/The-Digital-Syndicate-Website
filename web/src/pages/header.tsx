@@ -33,12 +33,13 @@ const Header = () => {
               </a>
               <div className="absolute left-0 top-full h-4 w-full" />
               <ul className="absolute left-0 top-full mt-4 w-48 bg-[#1A1A50] border border-[#7D3BB5] rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
-                {members.map((member) => (
-                  <>
-                    <li className="block px-4 py-2 text-white hover:bg-[#3B1D59]">
-                      <a href={`/members/${member.name}`}>{member.name}</a>
-                    </li>
-                  </>
+                {members.map((member, index) => (
+                  <li
+                    key={member.id || index}
+                    className="block px-4 py-2 text-white hover:bg-[#3B1D59]"
+                  >
+                    <a href={`/members/${member.name}`}>{member.name}</a>
+                  </li>
                 ))}
               </ul>
             </div>
